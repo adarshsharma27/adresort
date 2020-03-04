@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam" rel="stylesheet">
+    <link rel="stylesheet" href="simplelightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    
+   
+    <style>
+  
+      main{
+     
+      
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        width:100%;
+       height: 100%;
+      }
+    h5{
+       text-transform: uppercase;
+      font-size: 2.5rem;
+      text-align: center;
+       letter-spacing: 5px;
+       word-spacing:5px;
+       color:#fcfcfc;
+        font-weight: 700;
+        text-shadow: 0px 0px 15px #f9f9f9;
+    }
+      h3{
+        color:#212529;
+      }
+      p{
+        color:hsl(201, 11%, 66%);
+        font-size: 1rem;
+     
+        
+      }
+      #about p{
+        line-height: 25px;
+      }
+    h3,p{
+      font-family: 'Be Vietnam', sans-serif;
+     
+
+    }
+    .collapsible-body p{
+      padding-top: 0px;
+      padding-bottom:0px;
+    }
+    a,h4 ,button{
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 1px;
+    }
+    .overlay-3 {
+    background-color: #d3d3d394;
+    width:100%;
+    height: 360px;
+    position: absolute;
+    opacity: 1;
+    z-index: 900;
+    left:0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 1.5s ease;
+    
+  
+}
+aside{
+  position: relative;
+}
+aside:hover .overlay-3{
+display: none;
+opacity: 0;
+}
+.fa-search{
+  color:#ffff;
+}
+    #contact{
+      margin-top: 10vh;
+      padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: #f9f9f982;
+    }
+    img{
+      border-radius: 1px;
+     
+    }
+    .fa{
+      padding: 20px;
+    }
+   
+    /* animation */
+    @keyframes Animation{
+    0%{
+        opacity: 0;
+        }
+    58%{
+        opacity: 0.5;
+        }
+    100%{
+        transform: rotate(xx);
+        opacity: 1;
+        }
+}
+
+.blink{
+    animation: Animation 3s forwards 0.5s ease-in;
+}
+
+.carousel .carousel-item {
+  overflow: hidden;
+    width: 700px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left:0px;
+  
+}
+    /* animation */
+
+#silders{
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+}
+::placeholder{
+  color:#000000b5!important;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-left:8px;
+  font-family: 'Be Vietnam', sans-serif;
+
+}
+input{
+  border:2px solid #b3e5fc!important;
+  border-radius: 5px!important;
+}
+textarea{
+   border:2px solid #b3e5fc!important;
+   height: 109px!important;
+    margin-left:9px!important;
+    width: 63vw!important;
+    border-radius: 5px!important;
+  
+}
+  
+@media(max-width:440px)
+{
+  .carousel.carousel-slider .carousel-fixed-item.with-indicators {
+    bottom: 55px;
+  }
+
+  .carousel h3{
+    font-size: 10vw;
+  }
+}
+
+@media(max-width:375px){
+  textarea{
+    width: 89vw!important;
+  }
+  #about .alg{
+    padding-bottom: 20px;
+  }
+  .carousel .carousel-item{
+    background-size: 100% 100%;
+  }
+  h5{
+    font-size: 2rem;
+    line-height:10vh;
+  }
+ 
+    .overlay-3{
+        width: 340px;
+        height: 227px;
+    }
+
+    
+  
+}
+    </style>
+</head>
+<body>
+  <div class="navbar-fixed">
+  <nav class=" light-blue lighten-2">
+    <div class="nav-wrapper container ">
+      <a href="#!" class="brand-logo">AdResort</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#events">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  <ul class="sidenav" id="mobile-demo">
+      <li><a href="#home">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contactus.html">Contact</a></li> 
+  </ul>
+      <!--  Responsive navbar end-->
+        
+  
+  
+  <div class="parallax-container" id="home">
+      <div class="parallax"><img src="images/img6.jpg">
+      
+      </div>
+      <main>
+    <h5 class="blink">Welcome To Our Resort</h5>
+  </main>
+    </div>
+          <!--  slider  start-->
+  <section classs=" parallax-container" id="about">
+          <div class="row ">
+            <h3  class="center">About Us</h3>
+            <div class="col s12 m6 l4" data-aos="zoom-in"  data-aos-offset="120"><img  class="responsive-img " src="images/img1.jpg"  width="500px"height="200px" ></div>
+            <div class="col s12 m6 l4 center alg">
+                <h4>Our Resort</h4>
+                <p  >Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                    </p>
+                  <a style="font-size: 1rem;"href="#contact" class="waves-effect waves-light btn light-blue "><i class="material-icons right">add_circle</i>Book Room</a>
+            </div>
+            <div class="col s12 m6 l4"  data-aos="zoom-in"  data-aos-offset="120"><img  class="responsive-img"src="images/img2.jpg"  width="500px"  height="200px" ></div>
+           
+                           </div>
+        </section>
+        <section>
+            <div class="row container ">
+              <h3  class="center"> Free Services</h3>
+              <ul class="collapsible">
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">local_cafe</i>Espresso</div>
+                    <div class="collapsible-body"><span>
+                      <p></i>Americano</p>
+                      <p> Mint Chocolate</p>
+                      <p>Mocha</p>
+                      <p>Latte</p>
+                    </span></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">favorite</i>Ice Blended</div>
+                    <div class="collapsible-body"><span>
+                      <p>Caramel</p>
+                      <p>Cofee Jelly</p>
+                      <p>Matcha Cream</p>
+                    </span></div>
+                  </li>
+                  <li>
+                    <div class="collapsible-header"><i class="material-icons">whatshot</i>Tea</div>
+                    <div class="collapsible-body"><span>
+                    <p>Earl Grey</p>
+                    <p>Green Tea</p>
+                    <p>Jasmine Tea</p>
+                    </span></div>
+                  </li>
+                </ul>
+                      
+              </div>
+                            
+          </section >
+          <section id="gallery" class="gal" style="overflow-x: hidden;">
+              <div class="row ">
+                <h3  class="center">Gallery</h3>
+
+                <div class="col s12 m6 l4"  data-aos="fade-right"  data-aos-offset="200">
+                  <aside>
+                <a href="images/img4.jpg"   title="Image1"><img  src="images/img4.jpg" class="responsive-img"></a> 
+                <div class="overlay-3"> <h4>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </h4></div>
+                </aside>
+                <a href="images/img10.jpg"  title="Image2" > <img  src="images/img10.jpg" class="responsive-img"  ></a>
+
+              </div>
+                <div class="col s12 m6 l4"  data-aos="fade-left">
+                  <a href="images/img6.jpg" title="Image3" > <img  src="images/img6.jpg"    class="responsive-img"  ></a>
+                  
+   
+                  <a href="images/img7.jpg" title="Image4" >  <img  src="images/img7.jpg"   class="responsive-img"   ></a>
+                  </div>
+                  <div class="col s12 m6 l4"  data-aos="fade-right">
+                    <a href="images/img11.jpg"  title="Image5"><img  src="images/img11.jpg"  class="responsive-img"   ></a>
+                    
+                    <a href="images/img9.jpg" title="Image6" ><img  src="images/img9.jpg"  class="responsive-img"   ></a>
+                    </div>
+               
+               
+                </div>
+                               
+                              </section>
+                              <section>
+                              <!-- slider start -->
+                              <div class="carousel " id="silders"  data-aos="fade-up">
+                                  <a class="carousel-item " href="#"><img class="responsive-img" src="images/slider1.jpg" ></a>
+                                  <a class="carousel-item " href="#"><img class="responsive-img" src="images/slider2.jpg" ></a>
+                                  <a class="carousel-item " href="#"><img class="responsive-img" src="images/slider3.jpg" ></a>
+                                  <a class="carousel-item " href="#"><img class="responsive-img" src="images/slider4.jpg" ></a>
+                                  <a class="carousel-item" href="#"><img class="responsive-img"  src="images/slider5.jpg"></a>
+                                  <a class="carousel-item" href="#"><img  class="responsive-img" src="images/slider6.jpg" ></a>
+                                </div>
+                              <!-- slider end -->
+                              </section>
+
+            <section  id="events">
+              <div class="row ">
+                <h3  class="center" style="padding: 20px;">Events</h3>
+                <div class="col s12 m6 l4">
+                  <div class="card" data-aos="flip-right">
+                    <div class="card-image waves-effect waves-block waves-light">
+                      <img class="activator" src="images/img3.jpg"class="responsive-img">
+                    </div>
+                    <div class="card-content">
+                      <span class="card-title activator grey-text text-darken-4">Birthday Party<i class="material-icons right">more_vert</i></span>
+                      <p><a href="#contact">Book Now</a></p>
+                    </div>
+                    <div class="card-reveal">
+                      <span class="card-title grey-text text-darken-4">Birthday Party<i class="material-icons right">close</i></span>
+                      <p> We can also oraganize birthday party for you in our Resort</p>
+                    </div>
+                                         </div>
+                                          </div>
+                <div class="col s12 m6 l4">
+                    <div class="card"data-aos="flip-left">
+                        <div class="card-image waves-effect waves-block waves-light">
+                          <img class="activator" src="images/img5.jpg" class="responsive-img">
+                        </div>
+                        <div class="card-content">
+                          <span class="card-title activator grey-text text-darken-4">Pool Party<i class="material-icons right">more_vert</i></span>
+                          <p><a href="#contact">Book Now</a></p>
+                        </div>
+                        <div class="card-reveal">
+                          <span class="card-title grey-text text-darken-4">Pool Party<i class="material-icons right">close</i></span>
+                          <p> We can also oraganize cafe party for you   in our Resort</p>
+                        </div>
+                                                         </div>
+                                                               </div>
+                  <div class="col s12 m6 l4">
+                      <div class="card" data-aos="flip-right">
+                          <div class="card-image waves-effect waves-block waves-light">
+                            <img class="activator" src="images/img8.jpg" class="responsive-img"  >
+                          </div>
+                          <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Vacations<i class="material-icons right">more_vert</i></span>
+                            <p><a href="#contact">Book Now</a></p>
+                          </div>
+                          <div class="card-reveal">
+                            <span class="card-title grey-text text-darken-4">Vacations<i class="material-icons right">close</i></span>
+                            <p> We can also oraganize Vacations packages for you  in our coecafe</p>
+                          </div>
+                        </div>
+                                     </div>
+               
+               
+                            </div>
+                               
+            </section>
+            <section id="contact" class=" ">
+                <div class="row ">
+                  <div class="col s12 m6 l8 offset-l2  ">
+      <form class="col s12 black-text text-darken-2" method="POST" netlify>
+        <div class="row">
+          <div class="input-field col s12 ">
+            <input placeholder="Name" id="first_name" type="text" class="validate" name="name">
+                           </div>
+          <div class="input-field col s12">
+            <input id="email"  placeholder="Email"type="email" class="validate" name="email">
+                    </div>
+        
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1"  placeholder="Textarea"class="materialize-textarea" name="comment"></textarea>
+                     </div>
+                                      </div>
+                <button type="submit" class="waves-effect waves-light btn large light-blue lighten-3" >Send Message</button>
+            
+            </div>
+      </form>
+    </div>
+
+
+                    
+                 
+                
+                                 
+                                </section>
+                                <footer  style="overflow:hidden"class="page-footer light-blue lighten-2">
+                                    <div class="container ">
+                                      <div class="row">
+                                        <div class="col l12 s12 center" >
+                                            <a href="#" ><i class="fa fa-facebook fa-2x white-text "></i></a>
+                                            <a href="#"><i class=" fa fa-twitter fa-2x  white-text"></i></a>
+                                            <a href="#"><i class=" fa fa-instagram fa-2x white-text "></i></a>
+                                            <a href="#" ><i class=" fa fa-phone fa-2x white-text "></i></a>
+                                         
+                                        </div>
+                                        <div class="row">
+                                          <h6 class="white-text text-lighten-1 center"> We will  provide best service to our clients and customers</h6>
+                                        
+                                        </div>
+                                      </div>
+                                    </div>
+                                   
+                                  </footer>
+
+            
+    <script>
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+    
+    $('.carousel').carousel({
+indicators:true,
+    duration:100
+
+    }
+
+    );
+  
+  $('.collapsible').collapsible();
+    $('.parallax').parallax();
+    $('.gal a').simpleLightbox();
+  });
+    </script>
+     <script src="simple-lightbox.min.js"></script>
+     <script src="scroll.js"></script>
+     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>   
+     <script>
+        AOS.init();
+      </script>
+</body>
+</html>

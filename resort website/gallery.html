@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam" rel="stylesheet">
+    <link rel="stylesheet" href="simplelightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+   
+    <style>
+     
+     section{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+      h3{
+        color:#212529;
+        margin-top: -10px;
+        padding-bottom:5vh;
+       
+      }
+      p{
+        color:hsl(201, 11%, 66%);
+        font-size: 1rem;
+     
+        
+      }
+      
+    h3,p{
+      font-family: 'Be Vietnam', sans-serif;
+     
+
+    }
+    .collapsible-body p{
+      padding-top: 0px;
+      padding-bottom:0px;
+    }
+    a,h4 ,button{
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 1px;
+    }
+    .overlay-3 {
+    background-color: #d3d3d394;
+    width: 429px;
+    height: 285px;
+    position: absolute;
+    opacity: 1;
+    z-index: 900;
+    left:0px;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 1.5s ease;
+     
+  
+}
+aside{
+  position: relative;
+}
+aside:hover .overlay-3{
+display: none;
+opacity: 0;
+}
+.fa-search{
+  color:#ffff;
+}
+    #contact{
+      margin-top: 10vh;
+      padding-top: 10vh;
+    padding-bottom: 10vh;
+    background-color: #f9f9f982;
+    }
+    img{
+      border-radius: 1px;
+    }
+    .fa{
+      padding: 20px;
+    }
+    @media(max-width:375px){
+    .overlay-3{
+        width: 340px;
+        height: 227px;
+    }
+
+    }
+    </style>
+</head>
+<body>
+  <div class="navbar-fixed">
+  <nav class=" light-blue lighten-2">
+    <div class="nav-wrapper container ">
+      <a href="#!" class="brand-logo">AdResort</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="contactus.html">Contact</a></li>
+  </ul>
+      <!--  Responsive navbar end-->
+        
+  
+  
+          <section id="gallery" class="gal" >
+                <h3  class="center">Gallery</h3>
+              <div class="row ">
+             
+                <div class="col s12 m6 l4">
+                  <aside>
+                <a href="images/img4.jpg"   title="Image1"><img  src="images/img4.jpg" class="responsive-img"></a> 
+                <div class="overlay-3"> <h4>
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </h4></div>
+                </aside>
+                <a href="images/img10.jpg"  title="Image2" > <img  src="images/img10.jpg" class="responsive-img"  ></a>
+
+              </div>
+                <div class="col s12 m6 l4">
+                  <a href="images/img6.jpg" title="Image3" > <img  src="images/img6.jpg"    class="responsive-img"  ></a>
+                  
+   
+                  <a href="images/img7.jpg" title="Image4" >  <img  src="images/img7.jpg"   class="responsive-img"   ></a>
+                  </div>
+                  <div class="col s12 m6 l4">
+                    <a href="images/img11.jpg"  title="Image5"><img  src="images/img11.jpg"  class="responsive-img"   ></a>
+                    
+                    <a href="images/img9.jpg" title="Image6" ><img  src="images/img9.jpg"  class="responsive-img"   ></a>
+                    </div>
+               
+               
+                </div> <div class="row ">
+                
+                    <div class="col s12 m6 l4">
+                      <aside>
+                    <a href="images/img4.jpg"   title="Image1"><img  src="images/slider1.jpg" class="responsive-img"></a> 
+                   
+                    </aside>
+                    <a href="images/img10.jpg"  title="Image2" > <img  src="images/img1.jpg" class="responsive-img"  ></a>
+    
+                  </div>
+                    <div class="col s12 m6 l4">
+                      <a href="images/img6.jpg" title="Image3" > <img  src="images/img3.jpg"    class="responsive-img"  ></a>
+                      
+       
+                      <a href="images/img7.jpg" title="Image4" >  <img  src="images/img5.jpg"   class="responsive-img"   ></a>
+                      </div>
+                      <div class="col s12 m6 l4">
+                        <a href="images/img11.jpg"  title="Image5"><img  src="images/img10.jpg"  class="responsive-img"   ></a>
+                        
+                        <a href="images/img9.jpg" title="Image6" ><img  src="images/img12.jpg"  class="responsive-img"   ></a>
+                        </div>
+                   
+                   
+                    </div>
+
+                
+                              </section>
+                                <footer  style="overflow:hidden"class="page-footer light-blue lighten-2">
+                                    <div class="container ">
+                                      <div class="row">
+                                        <div class="col l12 s12 center" >
+                                            <a href="#" ><i class="fa fa-facebook fa-2x white-text "></i></a>
+                                            <a href="#"><i class=" fa fa-twitter fa-2x  white-text"></i></a>
+                                            <a href="#"><i class=" fa fa-instagram fa-2x white-text "></i></a>
+                                            <a href="#" ><i class=" fa fa-phone fa-2x white-text "></i></a>
+                                         
+                                        </div>
+                                        <div class="row">
+                                          <h6 class="white-text text-lighten-1 center"> We will  provide best service to our clients and customers</h6>
+                                        
+                                        </div>
+                                      </div>
+                                    </div>
+                                   
+                                  </footer>
+
+    <script>
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+            
+            $('.carousel').carousel({
+        indicators:true,
+            duration:100
+        
+            }
+        
+            );
+        
+        $('.collapsible').collapsible();
+            $('.parallax').parallax();
+            $('.gal a').simpleLightbox();
+        });
+            </script>
+            <script src="simple-lightbox.min.js"></script>   
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam" rel="stylesheet">
+    <link rel="stylesheet" href="simplelightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+   
+    <style>
+     
+     section{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+      h3{
+        color:#212529;
+      }
+      p{
+        color:hsl(201, 11%, 66%);
+        font-size: 1rem;
+     
+        
+      }
+    
+    h3,p{
+      font-family: 'Be Vietnam', sans-serif;
+     
+
+    }
+    
+    a,h4 ,button{
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 1px;
+    }
+   
+    #contact{
+     
+      padding-top: 15vh;
+    padding-bottom: 10vh;
+  
+    }
+   
+    .fa{
+      padding: 20px;
+    }
+    
+::placeholder{
+  color:hsl(201, 11%, 66%)!important;
+  font-size: 1.2rem;
+  font-weight: 400;
+  padding-left:8px;
+  font-family: 'Be Vietnam', sans-serif;
+
+}
+input{
+  border:2px solid #b3e5fc!important;
+  border-radius: 5px!important;
+}
+textarea{
+   border:2px solid #b3e5fc!important;
+   height: 109px!important;
+    margin-left:9px!important;
+    width: 63vw!important;
+    border-radius: 5px!important;
+  
+}
+@media(max-width:375px){
+  textarea{
+    width: 89vw!important;
+  }
+}
+    </style>
+</head>
+<body>
+    
+  <div class="navbar-fixed">
+  <nav class=" light-blue lighten-2">
+    <div class="nav-wrapper container ">
+      <a href="#!" class="brand-logo">AdResort</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="aboutus.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="aboutus.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="#contact">Contact</a></li>
+  </ul>
+      <!--  Responsive navbar end-->
+        
+  
+            <section id="contact" class=" ">
+                <div class="row ">
+                  <div class="col s12 m6 l8 offset-l2  ">
+      <form class="col s12 black-text text-darken-2" method="POST" netlify>
+        <div class="row">
+          <div class="input-field col s12 ">
+            <input placeholder="Name" id="first_name" type="text" class="validate" name="name">
+                           </div>
+          <div class="input-field col s12">
+            <input id="email"  placeholder="Email"type="email" class="validate" name="email">
+                    </div>
+        
+                <div class="row">
+                  <div class="input-field col s12">
+                    <textarea id="textarea1"  placeholder="Textarea"class="materialize-textarea" name="comment"></textarea>
+                     </div>
+                                      </div>
+                <button type="submit" class="waves-effect waves-light btn large light-blue lighten-3" >Send Message</button>
+            
+            </div>
+      </form>
+    </div>
+
+
+                    
+                 
+                
+                                 
+                                </section>
+                                <footer  style="overflow:hidden"class="page-footer light-blue lighten-2">
+                                    <div class="container ">
+                                      <div class="row">
+                                        <div class="col l12 s12 center" >
+                                            <a href="#" ><i class="fa fa-facebook fa-2x white-text "></i></a>
+                                            <a href="#"><i class=" fa fa-twitter fa-2x  white-text"></i></a>
+                                            <a href="#"><i class=" fa fa-instagram fa-2x white-text "></i></a>
+                                            <a href="#" ><i class=" fa fa-phone fa-2x white-text "></i></a>
+                                         
+                                        </div>
+                                        <div class="row">
+                                          <h6 class="white-text text-lighten-1 center"> We will  provide best service to our clients and customers</h6>
+                                        
+                                        </div>
+                                      </div>
+                                    </div>
+                                   
+                                  </footer>
+
+
+                      <script>
+                          $(document).ready(function(){
+                            $('.sidenav').sidenav();
+                            
+                            $('.carousel').carousel({
+                        indicators:true,
+                            duration:100
+                        
+                            }
+                        
+                            );
+                          
+                          $('.collapsible').collapsible();
+                            $('.parallax').parallax();
+                            $('.gal a').simpleLightbox();
+                          });
+                            </script>
+                            <script src="simple-lightbox.min.js"></script>  
+</body>
+</html>

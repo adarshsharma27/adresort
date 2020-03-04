@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Be+Vietnam" rel="stylesheet">
+    <link rel="stylesheet" href="simplelightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+   
+    <style>
+     
+      
+    section{
+        padding-top: 10vh;
+        padding-bottom: 10vh;
+    }
+      h3{
+        color:#212529;
+      }
+      p{
+        color:hsl(201, 11%, 66%);
+        font-size: 1rem;
+     
+        
+      }
+      #about p{
+        line-height: 25px;
+      }
+    h3,p{
+      font-family: 'Be Vietnam', sans-serif;
+     
+
+    }
+  
+    a,h4 ,button{
+      font-family: 'Rubik', sans-serif;
+      letter-spacing: 1px;
+    }
+    .fa{
+      padding: 20px;
+    }
+    
+
+@media(max-width:375px){
+  
+  #about .alg{
+    padding-bottom: 20px;
+  }
+  .carousel .carousel-item{
+    background-size: 100% 100%;
+  }
+  h5{
+    font-size: 2rem;
+    line-height:10vh;
+  }
+  
+}
+    </style>
+</head>
+<body>
+  <div class="navbar-fixed">
+  <nav class=" light-blue lighten-2">
+    <div class="nav-wrapper container ">
+      <a href="#!" class="brand-logo">AdResort</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="events.html">Events</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+</div>
+  <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="events.html">Events</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+  </ul>
+      <!--  Responsive navbar end-->
+        
+  
+  
+ 
+    </div>
+          <!--  slider  start-->
+  <section classs=" parallax-container" id="about">
+          <div class="row ">
+            <h3  class="center">About Us</h3>
+            <div class="col s12 m6 l4"><img  class="responsive-img " src="images/img1.jpg"  width="500px"height="200px" ></div>
+            <div class="col s12 m6 l4 center alg">
+                <h4>Our Resort</h4>
+                <p  >Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+                    </p>
+                  <a style="font-size: 1rem;"href="contactus.html" class="waves-effect waves-light btn light-blue "><i class="material-icons right">add_circle</i>Book Room</a>
+            </div>
+            <div class="col s12 m6 l4"><img  class="responsive-img"src="images/img2.jpg"  width="500px"  height="200px" ></div>
+           
+                           </div>
+        </section>
+                                </section>
+                                <footer  style="overflow:hidden"class="page-footer light-blue lighten-2">
+                                    <div class="container ">
+                                      <div class="row">
+                                        <div class="col l12 s12 center" >
+                                            <a href="#" ><i class="fa fa-facebook fa-2x white-text "></i></a>
+                                            <a href="#"><i class=" fa fa-twitter fa-2x  white-text"></i></a>
+                                            <a href="#"><i class=" fa fa-instagram fa-2x white-text "></i></a>
+                                            <a href="#" ><i class=" fa fa-phone fa-2x white-text "></i></a>
+                                         
+                                        </div>
+                                        <div class="row">
+                                          <h6 class="white-text text-lighten-1 center"> We will  provide best service to our clients and customers</h6>
+                                        
+                                        </div>
+                                      </div>
+                                    </div>
+                                   
+                                  </footer>
+
+            
+              <script>
+                  $(document).ready(function(){
+                    $('.sidenav').sidenav();
+                    
+                    $('.carousel').carousel({
+                indicators:true,
+                    duration:100
+                
+                    }
+                
+                    );
+                  
+                  $('.collapsible').collapsible();
+                    $('.parallax').parallax();
+                    $('.gal a').simpleLightbox();
+                  });
+                    </script>
+                      <script src="simple-lightbox.min.js"></script>    
+
+    
+</body>
+</html>
